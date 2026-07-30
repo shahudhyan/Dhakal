@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You — I'm Sorry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="hearts"></div>
+
+    <!-- Hero / Apology Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="subtitle">Before anything else...</span>
+            <h1>I'm Sorry</h1>
+            <div class="apology-letter">
+                <p class="typewriter" id="typewriter"></p>
+            </div>
+            <button class="btn-primary" id="forgiveBtn">Open When You're Ready 💌</button>
+        </div>
+        <div class="scroll-hint">↓</div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2>Us — The Good Stuff</h2>
+            <p class="section-desc">Every picture has a story. These are some of my favorites.</p>
+            
+            <div class="gallery-grid">
+                <!-- REPLACE src WITH YOUR PHOTO PATHS -->
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/photo1.jpg" alt="Us together" onerror="this.src='https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600'">
+                    <div class="gallery-caption">That day I fell for you a little more</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/photo2.jpg" alt="Memory together" onerror="this.src='https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600'">
+                    <div class="gallery-caption">My favorite smile in the world</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/photo3.jpg" alt="Special moment" onerror="this.src='https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=600'">
+                    <div class="gallery-caption">Home isn't a place, it's you</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/photo4.jpg" alt="Another memory" onerror="this.src='https://images.unsplash.com/photo-1529634597503-139d3726fed5?w=600'">
+                    <div class="gallery-caption">The moment I knew</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/photo5.jpg" alt="Happy times" onerror="this.src='https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=600'">
+                    <div class="gallery-caption">Laughing with you is my favorite sound</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/photo6.jpg" alt="Together" onerror="this.src='https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600'">
+                    <div class="gallery-caption">Forever isn't long enough</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reasons Section -->
+    <section class="reasons-section">
+        <div class="container">
+            <h2>What Makes You Incredible</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-icon">🎬</div>
+                    <h3>Your Passion</h3>
+                    <p>The way you light up talking about stories, characters, and worlds. I robbed us of sharing Odyssey together, and I hate that I did that.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">💫</div>
+                    <h3>Your Heart</h3>
+                    <p>You care so deeply about the people you love. I want to be someone who honors that, not takes it for granted.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">🌙</div>
+                    <h3>Your Presence</h3>
+                    <p>Even silence with you feels like a conversation. I promise to choose us over solo plans from now on.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">✨</div>
+                    <h3>Your Patience</h3>
+                    <p>You put up with me even when I mess up. I'm working on being worth that patience every single day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Promise -->
+    <section class="promise-section">
+        <div class="container">
+            <div class="promise-box">
+                <h2>My Promise</h2>
+                <div class="promise-text">
+                    <p>I promised we'd watch <em>Odyssey</em> together, and I broke that promise. That wasn't just about a movie — it was about shared experience, about waiting for each other, about choosing "us time."</p>
+                    <p>I won't watch the next episode, the next movie, or the next anything without you. Your company is the best part of any story.</p>
+                    <p>And if you'll let me, I want to rewatch it with you — your reactions, your commentary, your hand in mine. That's the only way it should have been.</p>
+                </div>
+                <div class="signature">— Yours, truly sorry</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Forgive Me -->
+    <section class="forgive-section" id="forgiveSection">
+        <div class="container text-center">
+            <h2>Will You Let Me Make It Up to You?</h2>
+            <p class="forgive-subtitle">I have a whole day planned. Just say yes.</p>
+            
+            <div class="forgive-buttons">
+                <button class="btn-yes" id="btnYes">Yes, forgive you 💖</button>
+                <button class="btn-no" id="btnNo">Not yet</button>
+            </div>
+
+            <div class="surprise-message" id="surpriseMessage">
+                <div class="surprise-content">
+                    <h3>You just made my whole day 🥹</h3>
+                    <p>Here's what's coming your way:</p>
+                    <ul class="surprise-list">
+                        <li>🎬 A rewatch of <em>Odyssey</em> — your way, your pace, your commentary</li>
+                        <li>🍕 Your favorite food (no compromises)</li>
+                        <li>🌹 A day where you don't lift a finger</li>
+                        <li>💌 And this — a reminder that you're loved, even when I'm an idiot</li>
+                    </ul>
+                    <div class="final-heart">❤️</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with regret, love, and a lot of copy-paste from the heart.</p>
+        <p class="footer-date">Today & always</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
