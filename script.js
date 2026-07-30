@@ -1,5 +1,5 @@
 // Typewriter Effect for Apology
-const apologyText = `Arya mero baby nero pookie, I know I messed up. I promised we'd watch Odyssey together, and I went ahead and watched it alone. That wasn't just about a movie also hai, it was about sharing something with you, about waiting for each other, about choosing "us time."
+const apologyText = `Arya mero baby mero pookie, I know I messed up. I promised we'd watch Odyssey together, and I went ahead and watched it alone. That wasn't just about a movie also hai, it was about sharing something with you, about waiting for each other, about choosing "us time."
 
 I broke that trust, and I'm truly sorry. You deserved to experience that story with me, to laugh at the same moments, I would kiss you like you are Penelope and I am Odyssey meeting you after 20 years, to have that memory.
 
