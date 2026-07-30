@@ -1,9 +1,9 @@
 // Typewriter Effect for Apology
-const apologyText = `I know I messed up. I promised we'd watch Odyssey together, and I went ahead and watched it alone. That wasn't just about a movie — it was about sharing something with you, about waiting for each other, about choosing "us time."
+const apologyText = `Arya mero baby, I know I messed up. I promised we'd watch Odyssey together, and I went ahead and watched it alone. That wasn't just about a movie also hai, it was about sharing something with you, about waiting for each other, about choosing "us time."
 
-I broke that trust, and I'm truly sorry. You deserved to experience that story with me, to laugh at the same moments, to theories together, to have that memory.
+I broke that trust, and I'm truly sorry. You deserved to experience that story with me, to laugh at the same moments, I would kiss you like you are Penelope and I am Odyssey meeting you after 20 years, to have that memory.
 
-I can't undo it. But I can promise I'll never make you feel left out again. Your company is the best part of any experience — and I forgot that for a moment. I won't forget again.`;
+I can't undo it. But I can promise I'll never make you feel left out again. But this my early Girfie day gift as we can't even meet cuz of stupid exams. Your company is the best part of any experience. I won't forget again ;)).`;
 
 let charIndex = 0;
 const typewriterElement = document.getElementById('typewriter');
